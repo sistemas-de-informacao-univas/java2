@@ -10,7 +10,7 @@ public class exerciciosdalista_1 {
 
 		int n = 6; // tamanho do vetor
 		int v[] = new int[n]; // declaração do vetor "v"
-		int i; // índice ou posição
+		int i, p; // índice ou posição
 		int aux = 0; // variavel auxiliar
 
 		// Entrada de valores no vetor
@@ -20,13 +20,12 @@ public class exerciciosdalista_1 {
 		}
 
 		// Alteração na posição dos valores
-		for (i = 0; i < n; i++) {	
-			if(i>n/2){i=n;}
-			else{
-				aux = v[i];
-				v[i] = v[n+i-1];
-				v[n+i-1] = aux;
-			}
+		p = n;
+		for (i = 0; i < n/2; i++) {	
+			aux = v[i];
+			v[i] = v[p-1];
+			v[p-1] = aux;
+			p--;
 		}
 		
 		// Entrada de valores no vetor
