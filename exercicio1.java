@@ -13,14 +13,14 @@ public class exerciciosdalista_1 {
 		int i, p; // índice ou posição
 		int aux = 0; // variavel auxiliar
 
-		// Entrada de valores no vetor
+		// Entrada de valores no vetor v
 		for (i = 0; i < n; i++) {
 			System.out.printf("Informe %2do. valor de %d: ", (i + 1), n);
 			v[i] = entrada.nextInt();
 		}
 
-		// Alteração na posição dos valores
 		p = n;
+		// Alteração na posição dos valores em v
 		for (i = 0; i < n/2; i++) {	
 			aux = v[i];
 			v[i] = v[p-1];
@@ -28,7 +28,7 @@ public class exerciciosdalista_1 {
 			p--;
 		}
 		
-		// Entrada de valores no vetor
+		// Exibindo os valores armazenados no vetor v
 		for (i = 0; i < n; i++) {
 			System.out.println("Valor na posição " + (i+1) + " e´ :" + v[i]);
 		}
