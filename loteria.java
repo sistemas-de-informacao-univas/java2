@@ -50,9 +50,10 @@ public class loteria {
         
         for (int i = 0; i < dezenas; i++) {
             int sorteado;
-            boolean repetido = false;
+            boolean repetido;
 
             do {
+		repetido = false;
                 sorteado = (int) (Math.random()*60)+1; //nro aleatorio de 1 a 60
                 
                 for (int j = 0; j < sorteio.length; j++) {
