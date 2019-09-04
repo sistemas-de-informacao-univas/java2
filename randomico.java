@@ -1,4 +1,4 @@
-package Arrays;
+package arrays;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -48,8 +48,7 @@ public class Randomico {
 		}
 
 		System.out.println("\n\n\n3) Valores multiplicados por: ");
-		//int x = entrada.nextInt();
-		int x=1;
+		int x = entrada.nextInt();
 		for (int i = 0; i < l; i++) {
 			System.out.println();
 			for (int k = 0; k < c; k++) {
