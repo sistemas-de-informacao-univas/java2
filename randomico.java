@@ -12,7 +12,7 @@ public class Randomico {
 		int c = 10;
 		int m[][] = new int[l][c];
 
-		// Gerando a matriz m com os valores aleat�rios
+		// Gerando a matriz m com os valores aleatórios
 		for (int i = 0; i < l; i++) {
 			for (int k = 0; k < c; k++) {
 				Random generator = new Random();
