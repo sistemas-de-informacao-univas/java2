@@ -12,6 +12,5 @@ public class capicua {
 	   } else {
 	       System.err.println("Não é capicua!");
 	   }
-	
 	}
 }
